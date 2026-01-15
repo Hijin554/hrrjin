@@ -1,0 +1,128 @@
+@media screen and (max-width: 980px) {
+  .common-button {
+    font-size: var(--fs-12);
+  }
+  /* Header style */
+  header {
+    background: #fff;
+    border-bottom: 1px solid var(--color-gray-d);
+  }
+
+  header .container {
+    grid-template-columns: 1fr 1fr;
+  }
+  header .container > *:not(.logo, .mobile-btn-wrapper) {
+    display: none;
+  }
+  header .logo {
+    justify-content: flex-start;
+  }
+  header .mobile-btn {
+    display: block;
+  }
+
+  header .mobile-menus {
+    display: block;
+    position: absolute;
+    top: 101%;
+    width: var(--ls-full);
+    background: #fff;
+    box-shadow: 0 1px 3px var(--color-gray-d);
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+
+  header .mobile-menus .nav-lists {
+    display: block;
+  }
+
+  header .mobile-menus .nav-lists li {
+    text-align: center;
+    padding: 0;
+  }
+  header .mobile-menus .nav-lists li a,
+  .info li a {
+    display: block;
+    width: var(--ls-full);
+    font-size: var(--fs-16);
+    padding: var(--el-medium) 0;
+    border-bottom: 1px solid var(--color-gray-d);
+  }
+
+  header .mobile-menus .info {
+    display: flex;
+    justify-content: center;
+  }
+  /* landing scetion */
+  .overflow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.4;
+  }
+  #main-section .landing-text-box h1 {
+    text-shadow: 1px 1px 1px var(--color-gray-2);
+  }
+  #main-section .landing-text-box-p {
+    width: var(--ls-12);
+  }
+}
+@media screen and (max-width: 786px) {
+  html {
+    font-size: 14px;
+  }
+  .scetion {
+    padding: var(--el-scetion-small);
+  }
+  .container {
+    padding: 0 var(--el-medium);
+  }
+}
+
+/* meet Scetion  */
+
+.meet-scetion .meet-wrapper {
+  flex-direction: column;
+  row-gap: var(--el-wide);
+}
+
+@media screen and (max-width: 501px) {
+  .scetion {
+    padding: 1 0.5rem;
+  }
+  #main-scetion .landing-text-box {
+    text-align: center;
+  }
+
+  #main-scetion .landing-text-box h1 {
+    font-size: 1 0.8rem;
+  }
+  #main-scetion .landing-text-box p {
+    width: 80;
+    margin: auto;
+  }
+  .overlay {
+    opacity: 0 7;
+  }
+
+  /* meet section style */
+
+  .meet-scetion .meet-text-box p {
+    width: var(--is-full);
+    font-size: var(--fs-16);
+  }
+
+  .meet-scetion .meet-image-box {
+    column-gap: var(--el-nomal);
+  }
+
+  .meet-scetion .meet-text-box span {
+    font-size: var(-fs-16);
+  }
+
+  .meet-scetion .meet-left-image {
+    row-gap: var(--el-nomal);
+  }
+}
